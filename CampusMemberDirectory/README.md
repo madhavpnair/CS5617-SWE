@@ -16,12 +16,12 @@ CampusMember is the common base class for all campus members.
 
 It contains:
 
-- Name – a read-only property shared by all members.
-- DescribeRole() – an abstract method that requires each derived class to provide its own implementation.
-- Introduction() - a virtual method that uses DescribeRole() and can be overridden by the derived classes
+-` Name` – a read-only property shared by all members.
+- `DescribeRole()` – an abstract method that requires each derived class to provide its own implementation.
+- `Introduction()` - a virtual method that uses DescribeRole() and can be overridden by the derived classes
 - Constructor validation to ensure that the member name is not null, empty, or whitespace.
 
-`Student`
+**`Student`**
 
 Student inherits from CampusMember.
 
@@ -31,7 +31,7 @@ It contains student-specific information such as:
 
 It implements `DescribeRole()` to provide a description specific to a student.
 
-`Lecturer`
+**`Lecturer`**
 
 Lecturer inherits from CampusMember.
 
