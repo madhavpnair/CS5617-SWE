@@ -18,8 +18,13 @@ namespace CampusMemberDirectory
         /// </summary>
         /// <param name="name"></param>
         /// <param name="department"></param>
+        /// <exception cref="ArgumentException"></exception>
         public Lecturer(string name, string department) : base(name)
         {
+            if (string.IsNullOrWhiteSpace(department))
+            {
+                throw new ArgumentException("Department cannot be null or whitespace.", nameof(name));
+            }
             Department = department;
         }
 
