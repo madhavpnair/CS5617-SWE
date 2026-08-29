@@ -6,19 +6,20 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CampusMemberDirectory;
-
-public sealed class Lecturer : CampusMember
+namespace CampusMemberDirectory
 {
-    public Lecturer(string name, string department) : base(name)
+    public sealed class Lecturer : CampusMember
     {
-        Department = department;
-    }
+        public Lecturer(string name, string department) : base(name)
+        {
+            Department = department;
+        }
 
-    public string Department { get; }
+        public string Department { get; }
 
-    public override string DescribeRole()
-    {
-        return $"Lecturer in {Department}";
+        public override string DescribeRole()
+        {
+            return $"Lecturer in {Department}";
+        }
     }
 }

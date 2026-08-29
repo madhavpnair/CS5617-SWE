@@ -6,21 +6,22 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CampusMemberDirectory;
-
-public sealed class Student : CampusMember
+namespace CampusMemberDirectory
 {
-    public Student(string name, string programme) : base(name)
+    public sealed class Student : CampusMember
     {
-        Programme = programme;
+        public Student(string name, string programme) : base(name)
+        {
+            Programme = programme;
+        }
+
+        public string Programme { get; }
+        public override string DescribeRole()
+        {
+            return $"Student in {Programme}";
+        }
+
+
+
     }
-
-    public string Programme { get; }
-    public override string DescribeRole()
-    {
-        return $"Student in {Programme}";
-    }
-
-
-
 }
