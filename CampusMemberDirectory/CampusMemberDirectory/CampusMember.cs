@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace CampusMemberDirectory;
+﻿namespace CampusMemberDirectory;
 
 public abstract class CampusMember
 {
