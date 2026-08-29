@@ -44,7 +44,7 @@ It implements `DescribeRole()` to provide a description specific to a lecturer.
 *The inheritance structure allows common state to be defined once in CampusMember while derived classes implement their own specialized behaviour.*
 
 ## Class diagram
-
+![Class Diagram](./WhatsApp%20Image%202026-08-29%20at%2011.55.28%20PM.jpeg)
 ## Build and Test
 - Build the solution from the repository root:
 
