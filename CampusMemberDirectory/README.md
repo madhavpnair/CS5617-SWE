@@ -43,9 +43,21 @@ It implements `DescribeRole()` to provide a description specific to a lecturer.
 
 *The inheritance structure allows common state to be defined once in CampusMember while derived classes implement their own specialized behaviour.*
 
-## INHERITANCE
-Inheritance is one of the four pillars of OOPS. The 
+## Class diagram
+
+## Build and Test
+- Build the solution from the repository root:
+
+`dotnet build`
+
+- Run all tests
+
+`dotnet test`
+
+## Test Summary
+- An exhaustive test suite is given in [CampusMemberDirectory.Test](./CampusMemberDirectory.Tests)
+- All 20 tests are passed
 
 ### References
-- (https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-csharp-with-mstest)[Microsoft Learn C# and MSTest]
-- (https://www.geeksforgeeks.org/c-sharp/csharp-programming-language/)[C# Tutorial Geeks for Geeks]
+- [Microsoft Learn C# and MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-csharp-with-mstest)
+- [C# Tutorial Geeks for Geeks](https://www.geeksforgeeks.org/c-sharp/csharp-programming-language/)
