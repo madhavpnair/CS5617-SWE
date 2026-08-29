@@ -8,14 +8,30 @@ using System.Text;
 
 namespace CampusMemberDirectory
 {
+    /// <summary>
+    /// A student affiliated with the campus 
+    /// </summary>
     public sealed class Student : CampusMember
     {
+        /// <summary>
+        /// Creates an instance of Student with Name and Programme
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="programme"></param>
         public Student(string name, string programme) : base(name)
         {
             Programme = programme;
         }
 
+        /// <summary>
+        /// To get the Programme which the student is doing
+        /// </summary>
         public string Programme { get; }
+
+        /// <summary>
+        /// Student class implements its own version of DescribeRole()
+        /// </summary>
+        /// <returns></returns>
         public override string DescribeRole()
         {
             return $"Student in {Programme}";
